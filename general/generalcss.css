@@ -1,0 +1,205 @@
+.titlelogo{
+        width: 200px; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Adjust spacing between logo and title text */
+        /* Add any other styles you need */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #555;
+  }
+
+ #video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+ header {
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-color: #555;
+    background-color:rgba(192,192,192,0.3);
+    /* background-color: #555; */
+    border-radius: 10px;
+    border-style: solid;
+  }
+
+  .logo img {
+    height: 70px;
+  }
+  
+
+/* Add media query for small screens */
+@media only screen and (max-width: 768px) {
+       .menu-toggle {
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: #555; /* Added background color */
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .menu {
+        display: none;
+        list-style: none;
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+    }
+    
+    .menu a {
+        color: white;
+        border-style: solid;
+        padding: 10px; /* Adjusted padding */
+        text-decoration: none;
+        display: block; /* Changed to block */
+    }
+    
+    .menu a:hover {
+        background-color: #555;
+    }
+    
+    .dropdown:hover .menu {
+        display: block; /* Changed to block */
+        position: absolute;
+        top: 100%; /* Position dropdown below the menu */
+        left: 0; /* Align dropdown with the left side of the menu */
+        z-index: 1; /* Ensure dropdown appears above other content */
+    }
+      .dropdown.active .menu {
+        display: block;
+    }
+    .footer-info {
+        flex-direction: column;
+
+       
+    }
+    footer {
+        color: #fff;
+        padding: 0px ;
+        margin: 0px; 
+        bottom: 0px;
+        position: relative;
+        width: 100%;
+        height: 20%;
+    }
+    /* .footer-info h3 {
+        font-size: 18px;
+        color:crimson;
+    } */
+    .footer-info h3 {
+        align-items: center;
+        text-align: center;
+        padding: 3px;
+        font-size: 18px;
+        color: wheat;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+
+}
+
+/* Hide menu toggle button on larger screens */
+@media only screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+    div ul.menu {
+        list-style: none;
+        display: flex;
+      }
+      
+      div ul.menu li a {
+        margin: 30px;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        border-style:solid;
+        border-color: white;
+        transition: background-color 0.3s, opacity 0.3s; /* Added opacity transition */
+      }
+      
+      div ul.menu li a:hover {
+        background-color: #555;
+        opacity: 0.9; /* Adjust opacity on hover */
+      }
+
+      .menu li {
+        font-weight: bold;
+        font-size: large;
+      }
+      
+    footer {
+        color: #fff;
+        padding: 0px ;
+        margin: 0px; 
+        bottom: 0px;
+        width: 100%;
+        height: 20%;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .footer-info div {
+        flex: 1;
+        padding: 0 20px;
+    
+    }
+
+    .footer-info h3 {
+        align-items: center;
+        text-align: center;
+        padding: 3px;
+        font-size: 18px;
+        color: wheat;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    .footer-info p {
+        font-size: 16px;
+        /* margin-bottom: 8px; */
+    }
+
+    
+      
+    
+}
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+

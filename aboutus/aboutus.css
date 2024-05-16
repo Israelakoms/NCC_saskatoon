@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: #555;
+
+}
+
+
+
+.upperbody {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden;
+    align-items: center;
+   
+}
+
+.upperbody::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Twice the width for smooth sliding */
+    height: 100%;
+    background: url('/pictures/replace.jpg') left no-repeat ,
+                url('/pictures/replace1.jpg') right  no-repeat;
+    animation: slide 10s infinite linear; /* Adjust timing as needed */
+}
+
+.center-text {
+
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    color: aliceblue;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top:30px ;
+}
+
+.center-text h2 {
+    font-weight: bold;
+    font-size: 40px; /* Adjust size as needed */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.center-text p {
+    font-size: 1.2em; /* Adjust size as needed */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.center-text i {
+    font-style: italic;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+

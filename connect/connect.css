@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 30%; /* Adjust width as needed */
+    margin: 15px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .mission-box {
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%; /* Make the mission box span the full width */
+    /* margin: 10px; */
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 1px solid white;
+    text-align: center;
+  }
+  
+  .mission-box h2 {
+    margin-top: 5px;
+  }
+  
+  .mission-box p {
+    margin: 2px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box {
+      width: 45%; /* Adjust width for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .box, .mission-box {
+      width: 90%; /* Adjust width for even smaller screens */
+    }
+  }
